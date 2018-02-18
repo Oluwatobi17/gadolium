@@ -1,0 +1,115 @@
+extends layout
+
+block content
+	.container
+		.section
+			h3 Computer Programming
+			p Computer Programming is the act or process of giving a computer instructtion on how to solve a particular problem. To give the computer instruction you need a computer programming language. A person that write computer programs is called a programmer.
+
+			h3 Computer Program
+			p Computer program is a set of instructions written by a programmer to give the computer instruction that should be used in solving a particular problem
+
+		.section
+			h3
+				center
+					Learning Computer Programming Language
+			p Imagine an English man who need to trade with a Russian. The only way for the English man to communicate to the Russian guy is to either get a third person that speak Russian and English for translating their goals or he should spend time learning the language of his subject. The main task at hand is solve world problems using computer and to do that you need a way to communicate to the hardware of the computer. The real problem shows itself to be that the computer only understand binary numbers(0 and 1) and humans speak human's language e.g English, Russia, Spanish e.t.c. Humans need the help of computers which leads to the need to understand computer languages called 'Machine Language'. With the use of machine language in the first generation, it was difficult and stressful to develop instruction for the computers which leads to the invention of 'Low level language' easier than Machine Language both till complicated. After some years High Level Languages was invented and till in production till date.
+
+			p This lead to the classification of computer languages as;
+			ol
+				li Machine Language
+				li Asemble or low level Language
+				li High level Language
+
+			p Our main focus will be on Computer High Level Languages which are;
+			ul
+				li C/C++
+				li Python
+				li Java
+				li JavaScript
+				li PHP
+				li Shell
+				li MATLAB
+				li Fortran
+				li Pascal
+			p there are thousands of programming languages with different functions for example
+			ul 
+				li JavaScript, python, PHP are examples of scripting languages for web development
+				li MATLAB, Fortran, pascal are examples of language used in make scientific calculation programs
+
+			p As stated above computer programs are used in doing different things/job. Computer programs are used in creating the following. Creating:
+			ul 
+				li Desktop programs
+				li Games
+				li Android applications
+				li IOS
+				li Web Applications
+
+			p Most expecially Artificial Intelligent programs and Systems such as;
+			ul 
+				li Robots
+				li Face Recognition programs used by the police
+				li Weather prediction programs. e.t.c.
+		.section
+			h3 Getting Started.
+			p Before you fully get started with any programming language you must first understand the steps that must be followed to produce an efficient computer program.
+			ol
+				li Definining the problem at hand
+				li Analysing the solution
+				li Creating instruction's blue print(Algorithm/Flowcharts)
+				li Deskchecking the instructions created in step 3
+				li Coding the instructions an efficient programming language
+				li Debugging the program
+				li Testing the program
+				li li Documenting the code
+				li Distributing the program to users
+			p For a language to be qualified as a programming language it must be able use the above production steps. This means all programming languages needs
+			ol
+				li A text editor for stating computer codes
+				li A Software(Compiler or Interpreter) which act as a third person between the programmer and the computer
+			p All programming programming language also have things in common which make them capable of being doctile to the production steps above. This features they all possess are;
+			ol
+				li Basic Syntax
+				li Data Type
+				li Variables
+				li Language Keywords
+				li Basic Operations
+				li Decision Making
+				li Loops
+				li Numbers
+				li Characters/String
+				li Arrays
+				il Functions
+				li File I/O
+		.section
+			h3 Who Said Coding Sucks?
+			p Click to download your desire programming language book and learn in easy steps
+			ul
+				Learn Python
+				li Learn Java
+				li Learn C programming
+				li Learn C++
+				li Learn Javascript
+				li Learn PHP
+				li Learn Shell
+				li Learn Ruby
+				li Learn Django
+				li Learn Laravel
+				li Learn AngularJS
+				li Learn NodeJS
+		.section
+			if comments
+				h2 Comments
+				each comment, i in comments
+					.comment
+						h3=comment.name
+						p=comment.body
+			else
+				h3 No comment presently
+		.section
+			h4 Give a comment
+			form(action='/comment', method='post')
+				input.form-body(type='text', name='name', placeholder='Enter your name', autofocus='')
+				input.form-body(type='email', name='email', placeholder='Enter your email')
+				textarea(name='body', placeholder='Comment')
+				input.form-body(type='submit', value='Add Comment')

@@ -1,0 +1,15 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		img.image#image(src='/images/code.jpeg')
+		nav
+			strong
+				a.top(href='/') Blog
+			strong
+				a.top(href='/about') About Us
+		block content
+			!= messages()
+		img.image#image(src='/images/code.jpeg')
