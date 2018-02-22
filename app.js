@@ -8,8 +8,8 @@ var bodyParser = require('body-parser');
 var flash = require('connect-flash');
 var expressMessage = require('express-messages');
 var moment = require('moment');
-var mongo = require('mongodb');
-var monk = require('monk')('mongodb://Gadoo:ganiu123456@ds239368.mlab.com:39368/gadolinium');
+//var mongo = require('mongodb');
+//var monk = require('monk')('mongodb://Gadoo:ganiu123456@ds239368.mlab.com:39368/gadolinium');
 
 var index = require('./routes/index');
 
